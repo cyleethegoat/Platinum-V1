@@ -14,7 +14,7 @@ let currentDesignIndex = 0;
 function getNextMenuDesign() {
   const designs = [
     {
-      header: "✦✦✦ ⟪ *{botname}* ⟫ ✦✦✦\n",
+      header: "🧸❤️👸 ⟪ *{botname}* ⟫ 👸❤️🧸\n",
       lineSeparator: "✦ ",
       commandPrefix: "➔ ",
       footer: "✦✦✦✦✦✦✦✦✦✦",
@@ -22,7 +22,7 @@ function getNextMenuDesign() {
       categorySeparator: "✦✧✦✧✦✧✦\n",
     },
     {
-      header: "⬤ ⟪ *{botname}* ⟫ ⬤\n",
+      header: "🧸❤️👸 ⟪ *{botname}* ⟫ 🧸❤️👸\n",
       lineSeparator: "⬤ ",
       commandPrefix: "⇒ ",
       footer: "⬤⬤⬤⬤⬤⬤⬤",
@@ -30,7 +30,7 @@ function getNextMenuDesign() {
       categorySeparator: "⬤⬛⬤⬛⬤⬛⬤\n",
     },
     {
-      header: "✰ ⟪ *{botname}* ⟫ ✰\n",
+      header: "🧸❤️👸 ⟪ *{botname}* ⟫ 👸❤️🧸\n",
       lineSeparator: "✰ ",
       commandPrefix: "✦ ",
       footer: "✰✰✰✰✰✰✰",
@@ -57,14 +57,14 @@ function sleep(ms) {
 astro_patch.smd({
   'cmdname': "menu",
   'desc': "Displays a stylish, readable command list",
-  'react': '🎨',
+  'react': '👸',
   'type': 'user',
   'filename': __filename
 }, async (context, message) => {
   try {
     // Display loading messages
     const loadingMessages = [
-      "🔄 Gathering your commands, please wait..."];
+      "kylie is preparing your menu, please wait...👸❤️🧸"];
     for (const msg of loadingMessages) {
       await context.sendMessage(context.chat, { text: msg });
       await sleep(1000); // Wait for 1 second between messages
@@ -101,7 +101,7 @@ astro_patch.smd({
 
     let menuContent = `${header}`;
     menuContent += `${lineSeparator}🌡️ *Temperature:* ${temperature}°C\n`;
-    menuContent += `${lineSeparator}🔰 *Owner:* ${Config.ownername}\n`;
+    menuContent += `${lineSeparator}👸 *Owner:* ${Config.ownername}\n`;
     menuContent += `${lineSeparator}🌍 *Location:* ${location}\n`;
     menuContent += `${lineSeparator}📆 *Date:* ${currentDate}\n`;
     menuContent += `${lineSeparator}🕰️ *Time:* ${currentTimeString}\n`;
